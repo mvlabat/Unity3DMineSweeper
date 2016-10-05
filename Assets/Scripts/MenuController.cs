@@ -4,7 +4,10 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
-    public class MenuController : MonoBehaviour {
+    public class MenuController : MonoBehaviour
+    {
+
+        [SerializeField] private Button startButton;
 
         // Use this for initialization
         void Start()
@@ -12,10 +15,14 @@ namespace Assets.Scripts
             Initialize();
         }
 
+        void OnDestroy()
+        {
+            startButton.onClick.RemoveAllListeners();
+        }
+
         protected void Initialize()
         {
-            Button menuButton = GameObject.Find("/Canvas/Start Button").GetComponent<Button>();
-            menuButton.onClick.AddListener(LoadField);
+            startButton.onClick.AddListener(LoadField);
         }
 
         protected void LoadField()

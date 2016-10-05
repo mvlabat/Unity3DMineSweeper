@@ -10,6 +10,8 @@ namespace Assets.Scripts
         protected FieldSettings settings;
         protected FieldDrawer fieldDrawer;
 
+        [SerializeField] private Button menuButton;
+
         // Use this for initialization
         void Start()
         {
@@ -22,6 +24,11 @@ namespace Assets.Scripts
 
         }
 
+        void OnDestroy()
+        {
+            menuButton.onClick.RemoveAllListeners();
+        }
+
         protected void Initialize()
         {
             settings = FieldSettings.Instance;
@@ -31,8 +38,7 @@ namespace Assets.Scripts
 
         protected void InitializeMenu()
         {
-            Button startButton = GameObject.Find("/Canvas/Menu Button").GetComponent<Button>();
-            startButton.onClick.AddListener(LoadMenu);
+            menuButton.onClick.AddListener(LoadMenu);
         }
 
         protected void LoadMenu()
