@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.MenuEffects
+namespace Assets.Scripts.MenuScene.Effects
 {
     using CubeList = List<GameObject>;
 

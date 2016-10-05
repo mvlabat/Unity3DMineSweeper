@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.FieldScene
 {
     public class FieldController : MonoBehaviour
     {

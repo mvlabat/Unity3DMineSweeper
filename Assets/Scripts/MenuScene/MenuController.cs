@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.MenuScene
 {
     public class MenuController : MonoBehaviour
     {
@@ -27,7 +27,7 @@ namespace Assets.Scripts
 
         protected void LoadField()
         {
-            GameObject.Find("/MenuEffects").GetComponent<MenuEffects.Controller>().HideEffects();
+            GameObject.Find("/MenuEffects").GetComponent<Effects.Controller>().HideEffects();
             SceneManager.LoadScene(1);
         }
     }
