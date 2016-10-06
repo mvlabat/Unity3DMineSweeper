@@ -13,4 +13,3 @@ namespace Assets.Scripts.FieldScene
         }
     }
 }
-

@@ -604,6 +604,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1436478222}
   - 114: {fileID: 1436478221}
+  - 114: {fileID: 1436478223}
   m_Layer: 0
   m_Name: MenuEffects
   m_TagString: Untagged
@@ -623,10 +624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CubeSpawnPeriod: 0.8
-  CubeMinSize: 45
-  CubeMaxSize: 75
-  MinScreenPassTime: 5
-  MaxScreenPassTime: 10
 --- !u!4 &1436478222
 Transform:
   m_ObjectHideFlags: 0
@@ -640,3 +637,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1436478223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1436478220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1052c1e6c74bddc43a9831d784b89cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CubeMinSize: 45
+  CubeMaxSize: 75
+  MinScreenPassTime: 5
+  MaxScreenPassTime: 10
